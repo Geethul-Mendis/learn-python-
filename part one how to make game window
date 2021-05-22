@@ -1,0 +1,24 @@
+import pygame 
+
+# Intialiize the pygame 
+pygame.init()
+
+# creat the screen
+screen = pygame.display.set_mode((800,600))
+
+ # Title and icon
+pygame.display.set_caption("tanks war")
+icon= pygame.image.load('Counter-Strike Source.png')
+pygame.dosplay.set_icon(icon)    
+    
+    
+# Game loop
+running = True 
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+           running = False
+
+      # 
+      screen.fill((255,0,0))
+      pygae.display.update()
